@@ -5,6 +5,7 @@ html {
     font-size: 100%;
     box-sizing: border-box;
     cursor: pointer;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 :root {
@@ -98,6 +99,10 @@ li a {
     margin-left: -150px;
     }
 
+p {
+    font-size: 24px;
+}
+
 .contact {
     background-color:hsl(14, 100%, 50%);
     color:hsl(0, 0%, 99%);
@@ -107,6 +112,7 @@ li a {
     font-size: 24px;
     font-family: 'Bebas Neue', sans-serif;
 }
+
 .contact_button {
     color: hsl(0, 0%, 99%);
     border-radius: 6px;
