@@ -1,10 +1,8 @@
-
 html {
     padding: 0;
     margin: 0;
     font-size: 100%;
     box-sizing: border-box;
-    cursor: pointer;
     font-family: 'Bebas Neue', sans-serif;
 }
 
@@ -24,40 +22,46 @@ body {
 /* nav bar section - need to figure out how to make the links adjust right.
 using flexbox doesn't work...I think because the animation is getting in the way. */
 
-nav {
-    padding: 0 40px;
+.header {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.nav_links {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 2rem;
 }
 
-li, a {
-    text-decoration: none;
-    padding: 30px;
-}
-
-.logo {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 50px;
-    color:var(--text1);
-}
-
-.logo:hover {
-    color:var(--text2);
-}
-
-
-nav ul {
+.nav_links ul {
     display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+    list-style: none;
+}
+
+.nav_links li {
+    padding-left: 1rem;
+}
+
+.nav_links a {
+    text-decoration: none;
+    color: var(--text1);
+    font-size: 20px;
+}
+
+.nav_links .logo {
+    font-size: 40px;
+}
+
+.nav_links .logo:hover{
+    color: var(--text2);
+}
+
 
 /* here's where all the hover underline animation is happening in the nav elements*/
 
 li a {
-    font-size: 22px;
+    font-size: 28px;
     font-family: 'Bebas Neue', sans-serif;
     display: inline-block;
     text-decoration: none;
@@ -86,7 +90,7 @@ li a {
 
 /* hero section - need to figure out how to align the items properly here and make the text responsive */
 
-.hero_parent {
+.hero_container {
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -121,7 +125,7 @@ li a {
     font-family: 'Bebas Neue', sans-serif;
     }
 
-p {
+.hero_bio {
     font-size: 2.5vw;
 }
 
@@ -133,7 +137,9 @@ p {
     display: flex;
     justify-content: flex-end;
     align-content: center;
-    font-size: 24px;
+    border-radius: 8px;
+    font-size: 28px;
+    margin: 20px;
     font-family: 'Bebas Neue', sans-serif;
 }
 
@@ -141,21 +147,12 @@ p {
     align-self: center;
 }
 
-svg {
-    max-width: 40px;
-    max-height: 40px;
-}
-
-.github-alt:hover{
-    fill: var(--text1);
-}
-
 .contact_button {
     color: var(--bg-body);
     border-radius: 6px;
     background: transparent;
     border: 2px solid;
-    padding: 10px 20px;
+    padding: 10px 0;
     margin: 20px 30px;
     text-align: center;
     display: inline-block;
@@ -166,9 +163,8 @@ svg {
 .contact_button a {
     color:var(--bg-body);
 }
+
 .contact_button:hover {
     background-color: var(--text1);
 }
-
-
 
