@@ -10,6 +10,7 @@ html {
 
 :root {
     --bg-body: hsl(0, 0%, 99%);
+    --bg-card: hsl(0, 5%, 87%);
     --text1: hsl(233, 85%, 52%);
     --text2: hsl(14, 100%, 50%);
 }
@@ -38,11 +39,11 @@ li, a {
 .logo {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 50px;
-    color:hsl(233, 85%, 52%);
+    color:var(--text1);
 }
 
 .logo:hover {
-    color:hsl(14, 100%, 50%);
+    color:var(--text2);
 }
 
 
@@ -99,7 +100,7 @@ li a {
 .hero_portrait {
     max-width: 70%;
     max-height: 70%;
-    background-color:hsl(0, 5%, 87%);
+    background-color:var(--bg-card);
     border-radius: 8px;
     margin: 8px;
     box-shadow: 10px 10px;
@@ -116,7 +117,7 @@ li a {
     position: relative;
     align-self: flex-start;
     padding: 50px;
-    color:hsl(14, 100%, 50%);
+    color:var(--text2);
     margin-left: -250px;
     margin-top: -60px;
     font-family: 'Bebas Neue', sans-serif;
@@ -129,8 +130,8 @@ p {
 /* contact banner/footer section */
 
 .contact {
-    background-color:hsl(14, 100%, 50%);
-    color:hsl(0, 0%, 99%);
+    background-color:var(--text2);
+    color:var(--bg-body);
     display: flex;
     justify-content: flex-end;
     align-content: center;
@@ -148,11 +149,11 @@ svg {
 }
 
 .github-alt:hover{
-    fill:hsl(233, 85%, 52%);
+    fill: var(--text1);
 }
 
 .contact_button {
-    color: hsl(0, 0%, 99%);
+    color: var(--bg-body);
     border-radius: 6px;
     background: transparent;
     border: 2px solid;
@@ -165,10 +166,10 @@ svg {
 }
 
 .contact_button a {
-    color:hsl(0, 0%, 99%);
+    color:var(--bg-body);
 }
 .contact_button:hover {
-    background-color: hsl(233, 85%, 52%);
+    background-color: var(--text1);
 }
 
 
