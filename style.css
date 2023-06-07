@@ -4,6 +4,7 @@ html {
     margin: 0;
     font-size: 100%;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 :root {
@@ -11,22 +12,21 @@ html {
     --text1: hsl(233, 85%, 52%);
     --text2: hsl(14, 100%, 50%);
 }
+
 body {
-    margin: 0;
     background-color: var(--bg-body);
     color: var(--text1);
     font-family: 'Oswald', sans-serif;
 };
 
-h1 {
-font-size: 200px;
+header {
+    padding: 0 40px;
 }
 
-
-
-img {
-    max-width: 70%;
-    max-height: 70%;
+.logo {
+    margin-right: auto;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
 }
 
 ul {
@@ -35,12 +35,10 @@ ul {
     padding: 0;
   }
 
-
-
-li a{
+li a {
     padding: 80px 20px;
     font-size: 22px;
-    font-family:
+    font-family: 'Bebas Neue', sans-serif;
     display: inline-block;
     text-decoration: none;
     position: relative;
@@ -65,15 +63,66 @@ li a{
     transform: scale3d(1,1,1);
   }
 
-  .portrait {
+
+
+.hero_parent {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero_portrait {
+    max-width: 70%;
+    max-height: 70%;
     background-color:hsl(0, 5%, 87%);
     border-radius: 8px;
     margin: 8px;
     box-shadow: 10px 10px;
     transform: scale(0.9, 0.9);
     transition: transform 0.2s ease-in;
-  }
+}
 
-.portrait:hover {
+.hero_portrait:hover {
     transform: scale(1,1);
 }
+
+.hero_name {
+    font-size: 80px;
+    position: relative;
+    align-self: flex-start;
+    padding: 30px;
+    margin-left: -150px;
+    }
+
+.contact {
+    background-color:hsl(14, 100%, 50%);
+    color:hsl(0, 0%, 99%);
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    font-size: 24px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.contact_button {
+    color: hsl(0, 0%, 99%);
+    border-radius: 6px;
+    background: transparent;
+    border: 2px solid;
+    padding: 10px 20px;
+    margin: 10px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.contact_button:hover {
+    background-color: hsl(233, 85%, 52%);
+}
+
+
+
