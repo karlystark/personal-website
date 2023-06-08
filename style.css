@@ -194,7 +194,6 @@ li a::before {
   }
 
   .holder_message {
-    text-align: center;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 80px;
     padding: 100px;
@@ -203,9 +202,6 @@ li a::before {
   .holder_exclamation {
     max-height: 70%;
     max-width: 70%;
-    position: absolute;
-    margin-left: -90px;
-    margin-top: -10px;
   }
 
   .message_container .holder_exclamation {
