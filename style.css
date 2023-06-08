@@ -273,3 +273,62 @@ using flexbox doesn't work...I think because the animation is getting in the way
   .cv_click_header {
     font-size: 20px;
   }
+
+  /* CONTACT PAGE */
+
+  .contact_header_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+
+  .contact_connect_graphic {
+    display: flex;
+    max-width: 30%;
+    max-height: 30%;
+    margin-top: -250px;
+    transform: rotate(-18deg);
+  }
+
+  .contact_photo {
+    max-width: 70%;
+    max-height: 70%;
+    transition: 0.5s ease;
+  }
+
+  .contact_photo:hover {
+    box-shadow: 10px 10px 0 5px var(--text2);
+    transition: 0.5s ease;
+  }
+
+  .contact_info_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: var(--text1);
+    border-radius: 6px;
+    max-height: 250px;
+    max-width: 250px;
+    padding: 10px;
+    margin-top: -250px;
+
+    font-family: "bebas neue", sans-serif;
+  }
+
+  .contact_link {
+    font-size: 50px;
+    text-decoration: none;
+    color: var(--text1);
+  }
+
+  .contact_link:hover {
+    color: var(--text2);
+  }
+
+  .contact_title {
+    font-size: 24px;
+  }
