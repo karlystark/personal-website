@@ -179,7 +179,7 @@ using flexbox doesn't work...I think because the animation is getting in the way
 }
 
 .contact_button:hover {
-    background-color: var(--text1);
+    border: 2px dashed;
 }
 
 
