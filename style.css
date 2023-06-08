@@ -241,9 +241,6 @@ using flexbox doesn't work...I think because the animation is getting in the way
     margin-right: 80px;
   }
 
-  .bio_portrait {
-
-  }
 
   .cv_container {
     display: flex;
