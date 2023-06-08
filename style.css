@@ -1,3 +1,7 @@
+/*---------------- LANDING PAGE -----------------------*/
+
+/*---- General ----*/
+
 html {
     padding: 0;
     margin: 0;
@@ -19,8 +23,7 @@ body {
     font-family: 'Oswald', sans-serif;
 };
 
-/* nav bar section - need to figure out how to make the links adjust right.
-using flexbox doesn't work...I think because the animation is getting in the way. */
+/*---- Nav Bar Section ----*/
 
 .header {
     min-height: 100vh;
@@ -63,10 +66,7 @@ using flexbox doesn't work...I think because the animation is getting in the way
     color: var(--text2);
 }
 
-
-/* here's where all the hover underline animation is happening in the nav elements*/
-
-  li a::before {
+li a::before {
     content: "";
     width: 100%;
     height: 3px;
@@ -84,7 +84,7 @@ using flexbox doesn't work...I think because the animation is getting in the way
   }
 
 
-/* hero section - need to figure out how to align the items properly here and make the text responsive */
+/*---- Hero Section ----*/
 
 .hero_container {
     width: 90%;
@@ -141,7 +141,7 @@ using flexbox doesn't work...I think because the animation is getting in the way
     align-self: flex-end;
 }
 
-/* contact banner/footer section */
+/*---- Contact Banner/Footer Section ----*/
 
 .contact_container {
     background-color:var(--text2);
@@ -183,7 +183,7 @@ using flexbox doesn't work...I think because the animation is getting in the way
 }
 
 
-/* PORTFOLIO PAGE */
+/*---------------- PORTFOLIO PAGE -----------------------*/
 
 .message_container {
     position: block;
@@ -217,7 +217,7 @@ using flexbox doesn't work...I think because the animation is getting in the way
     display: block;
   }
 
-  /* ABOUT ME PAGE */
+ /*---------------- ABOUT PAGE -----------------------*/
 
   .bio_container {
     display: flex;
@@ -274,7 +274,7 @@ using flexbox doesn't work...I think because the animation is getting in the way
     font-size: 20px;
   }
 
-  /* CONTACT PAGE */
+  /*---------------- CONTACT PAGE -----------------------*/
 
   .contact_header_container {
     display: flex;
