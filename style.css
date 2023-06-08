@@ -97,17 +97,15 @@ li a::before {
 
 .hero_left {
     position: relative;
-    display: inline-block;
+    display: block;
     width: 70%;
-    vertical-align: center;
     float: left;
 }
 
 .hero_right {
     position: relative;
-    display: inline-block;
+    display: block;
     width: 30%;
-    vertical-align: center;
     text-align: left;
     float: right;
     margin-top: -30px;
